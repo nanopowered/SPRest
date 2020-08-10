@@ -1,12 +1,3 @@
-
-//#region Declare
-declare function SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId: string, fillPickerWithThoseUsers: [] | null, schema: any): any;
-declare var SPClientPeoplePicker: any;
-declare var SPClientPeoplePickerDict: any;
-declare var SP: any;
-declare var _spPageContextInfo: any;
-//#endregion
-
 namespace SPRest {
 
     //#region Base Interfaces & classes
@@ -34,18 +25,6 @@ namespace SPRest {
         Modified: string | Date;
         Author: IPerson;
         Editor: IPerson;
-    }
-
-    interface IDoc extends IlistItem {
-        FileRef: string
-    }
-
-    interface IImage extends IDoc {
-        EncodedAbsThumbnailUrl: string,
-        EncodedAbsWebImgUrl: string,
-        ImageWidth: number,
-        ImageHeight: number,
-        Base64: string
     }
     //#endregion
 
